@@ -1,0 +1,188 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    flex-direction:column;
+  }
+
+  
+@font-face {
+  font-family: 'akira_expandedsuper_bold';
+  src: url('akira_expanded_demo-webfont.woff2') format('woff2'),
+       url('akira_expanded_demo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotolight';
+  src: url('roboto-light-webfont.woff2') format('woff2'),
+       url('roboto-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+  
+  @media only screen and (max-height: 450px) {
+    #foot {
+      display: none;
+    }
+  }
+  
+  canvas {
+    display: block;
+  }
+  
+  p {
+    color:yellow;
+  }
+  
+  #title {
+    font-family:"akira_expandedsuper_bold";
+    font-size:1.5em;
+    color:black;
+    margin:30px;
+
+  }
+  
+  #topText {
+    font-size:0.8em;
+  }
+
+  #foot {
+    color:black;
+    position:fixed;
+    font-family:"robotolight";
+    bottom:4px;
+    text-align: center;
+
+  }
+  
+  #tempo {
+    position:fixed;
+    font-family:"robotolight";
+    font-size:0.8em;
+    top: 260px;
+    margin:0;
+  }
+
+  label {
+    position: absolute;
+    top:258px;
+    border:0px solid #ccc;
+    padding:2px;
+    font-size:0.8em;
+    font-family: "robotolight";
+    margin-left: 150px;
+    display:block; 
+   }
+   
+   label:hover {
+    background:#ffdede;
+    cursor:pointer;
+   }
+
+   #checkbox1 {
+    -webkit-appearance: none;
+	background-color: #ddd;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 5px;
+    margin:0 2px 0 0;
+	display: inline-block;
+	position: relative;
+   }
+
+   #checkbox1:checked {
+       background-color:red;
+   }
+
+  button {
+    font-family:"robotolight";
+    border:none;
+    background:#ddd;
+    height:30px;
+  }
+  
+  button:hover {
+    background:#5a5a5a;
+    color:white;
+  }
+  
+  button:focus {
+    border:none;
+  }
+  
+  input[type="range"] { 
+      margin: auto;
+      -webkit-appearance: none;
+      position: relative;
+      overflow: hidden;
+      height: 30px;
+      width: 200px;
+      cursor: pointer;
+      border-radius: 0; /* iOS */
+  }
+  
+  ::-webkit-slider-runnable-track {
+      background: #ddd;
+  }
+  
+  /*
+   * 1. Set to 0 width and remove border for a slider without a thumb
+   */
+  ::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 0px; /* 1 */
+      height: 30px;
+      background: none;
+      box-shadow: -100vw 0 0 100vw #ff0000;
+  }
+  
+  ::-moz-range-track {
+      height: 40px;
+      background: #ddd;
+  }
+  
+  ::-moz-range-thumb {
+      background: #fff;
+      height: 40px;
+      width: 20px;
+      border: 3px solid #999;
+      border-radius: 0 !important;
+      box-shadow: -100vw 0 0 100vw dodgerblue;
+      box-sizing: border-box;
+  }
+  
+  ::-ms-fill-lower { 
+      background: dodgerblue;
+  }
+  
+  ::-ms-thumb { 
+      background: #fff;
+      border: 2px solid #999;
+      height: 40px;
+      width: 20px;
+      box-sizing: border-box;
+  }
+  
+  ::-ms-ticks-after { 
+      display: none; 
+  }
+  
+  ::-ms-ticks-before { 
+      display: none; 
+  }
+  
+  ::-ms-track { 
+      background: #ddd;
+      color: transparent;
+      height: 40px;
+      border: none;
+  }
+  
+  ::-ms-tooltip { 
+      display: none;
+  }
