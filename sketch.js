@@ -23,12 +23,12 @@ function setup() {
   checkbox = document.querySelector("input[name=checkbox]");
 
   
-  /*
+  
   hh = loadSound('assets/closed-hi-hat-ghetto_130bpm_C_minor.wav', () => {});
   clap = loadSound('assets/clap-for-production-9_B_minor.wav', () => {});
   bass = loadSound('assets/bass-kick-logic.wav', () => {});
   oh = loadSound('assets/oHat.wav', () => {});
-  */
+  
   //PATTERNS
   hPat = [0, 0, 1, 0, 0, 0, 1, 0];
   oPat = [0, 0, 0, 0, 0, 0, 0, 1];
@@ -104,13 +104,13 @@ function touchStarted() {
   console.log('working');
 }
 
-/*function preload() {
+function preload() {
   iKick = loadImage('assets/KICK.png');
   iOpen = loadImage('assets/OPEN.png')
   iClap = loadImage('assets/CLAP.png')
   iHat = loadImage('assets/HIHAT.png')
 }
-*/
+
 
 function canvasPressed() {
   let rowClicked = floor(4*mouseY/height)
