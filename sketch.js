@@ -18,8 +18,7 @@ function setup() {
   cnv.mousePressed(canvasPressed);
   beatLength = 9;
   cursorPos = 0;
-  
-  preLoad();
+
   
   bpmText = document.getElementById("tempo");
   checkbox = document.querySelector("input[name=checkbox]");
