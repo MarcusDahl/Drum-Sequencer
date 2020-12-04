@@ -112,7 +112,8 @@ html, body {
   }
   
   button:focus {
-    border:none;
+    border:none;\
+    outline:none;
   }
   
   input[type="range"] { 
@@ -120,7 +121,7 @@ html, body {
       -webkit-appearance: none;
       position: relative;
       overflow: hidden;
-      height: 30px;
+      height: 20px;
       width: 200px;
       cursor: pointer;
       border-radius: 0; /* iOS */
