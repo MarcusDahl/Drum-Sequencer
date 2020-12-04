@@ -72,7 +72,7 @@ function setup() {
   
 
   bPlay = createButton('▶ Play');
-  bPlay.style("margin-top:10px; width:200px;")
+  bPlay.style("margin-top:0px; width:200px; border-top:1px solid #5a5a5a;")
   bPlay.mouseClicked(playLoop);
   drawMatrix();
 
